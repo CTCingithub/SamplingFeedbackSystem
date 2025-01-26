@@ -1,0 +1,28 @@
+# Time Step for Time History
+dt: 0.00001
+
+# Sampling Time
+ts: 0.008
+
+# Simulation Duration
+SimulationTime: 1.0
+
+# Target in Joint Space
+# TargetAngle=[pi/2,pi/4,pi/6,pi/3,-pi/6,-pi/2,pi/3]';
+TargetAngle: [ 1.5707963267948966, 0.7853981633974483, 0.5235987755982988, 1.0471975511965976, -0.5235987755982988, -1.5707963267948966, 1.0471975511965976 ]
+
+# Initial Condition
+# StateInitial=[TargetAngle+0.01;zeros(7,1)];
+StateInitial: [ 1.5807963267948966, 0.7953981633974483, 0.5335987755982989, 1.0571975511965979, -0.5135987755982989, -1.5607963267948965, 1.0571975511965979, 0, 0, 0, 0, 0, 0, 0 ]
+
+# PD Gains
+Kp: [ 60, 60, 60, 60, 25, 15, 5 ]
+Kd: [ 5, 5, 5, 2, 2, 2, 1 ]
+
+# ODE Solver Option
+ODE_RelTol: 1.01e-12
+ODE_AbsTol: 1.01e-12
+
+# DDE Solver Option
+DDE_RelTol: 1.01e-12
+DDE_AbsTol: 1.01e-12
