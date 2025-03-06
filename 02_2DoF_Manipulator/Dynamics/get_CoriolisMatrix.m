@@ -1,4 +1,4 @@
-function C_Mat = get_CoriolisMatrix(t, State, Robot)
+function C_Mat = get_CoriolisMatrix(State, Robot)
     % Import Robot Parameters
     m2 = Robot.m2;
     l1 = Robot.l1;
@@ -15,5 +15,4 @@ function C_Mat = get_CoriolisMatrix(t, State, Robot)
     C21 = l1 .* lc2 .* m2 .* v_1 .* sin(theta_2);
     C22 = 0;
     C_Mat = [C11, C12; C21, C22];
-
 end

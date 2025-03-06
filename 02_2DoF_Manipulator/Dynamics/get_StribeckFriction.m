@@ -3,7 +3,7 @@ function tau_F = get_StribeckFriction(qdot, Robot)
     % Emika PANDA Robot: A Comparative Analysis of Friction Models
     Fc = Robot.Fc;
     Fv = Robot.Fv;
-    Fs = Robot;
+    Fs = Robot.Fs;
     Vs = Robot.Vs;
     Ks = Robot.Ks;
 
@@ -15,5 +15,5 @@ function tau_F = get_StribeckFriction(qdot, Robot)
     f2 = sign(qdot_2) * (Fc(2) + ...
         Fs(2) * exp(-abs(qdot_2) / Vs(2) * Ks(2))) + Fv(2) * qdot_2;
 
-    tau_F = [f1, f2];
+    tau_F = [f1; f2];
 end

@@ -1,4 +1,4 @@
-function C_Vec = get_CoriolisVector(t, State, Robot)
+function C_Vec = get_CoriolisVector(State, Robot)
     % Import Robot Parameters
     m2 = Robot.m2;
     l1 = Robot.l1;

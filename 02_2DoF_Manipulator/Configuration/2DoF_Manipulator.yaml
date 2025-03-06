@@ -1,0 +1,29 @@
+# Solver Time Step / Sampling Time
+ratio: 0.001
+
+# Sampling Time
+ts: 0.07
+
+# Simulation Duration
+SimulationTime: 5.0
+
+# Target in Joint Space
+# TargetAngle=[pi/4,pi/6]';
+TargetAngle: [0.785398, 0.523599]
+
+# Initial Condition
+# StateInitial=[TargetAngle+0.01,zeros(7,1)];
+StateInitial: [0.795398, 0.533599, 0, 0]
+
+# PD Gains
+Kp: [ 100, 80 ]
+Kd: [ 50, 20 ]
+
+# ODE Solver Option
+ODE_RelTol: 1.01e-12
+ODE_AbsTol: 1.01e-12
+
+# DDE Solver Option
+DDE_RelTol: 1.01e-12
+DDE_AbsTol: 1.01e-12
+

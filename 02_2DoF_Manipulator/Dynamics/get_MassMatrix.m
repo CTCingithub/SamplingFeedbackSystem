@@ -1,4 +1,4 @@
-function M = get_MassMatrix(t, State, Robot)
+function M = get_MassMatrix(State, Robot)
     % Import Robot Parameters
     m1 = Robot.m1;
     m2 = Robot.m2;

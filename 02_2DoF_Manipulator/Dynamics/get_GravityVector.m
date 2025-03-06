@@ -1,11 +1,12 @@
-function G = get_GravityVector(t, State, Robot)
-    % Import Robot Parameters
-    m1 = Robot.m1;
-    m2 = Robot.m2;
-    l1 = Robot.l1;
-    lc1 = Robot.lc1;
-    lc2 = Robot.lc2;
-    g = Robot.g;
+function G = get_GravityVector(State, RobotStruct)
+    % Import RobotStruct Parameters
+    
+    m1 = RobotStruct.m1;
+    m2 = RobotStruct.m2;
+    l1 = RobotStruct.l1;
+    lc1 = RobotStruct.lc1;
+    lc2 = RobotStruct.lc2;
+    g = RobotStruct.g;
 
     % Extract joint angles
     theta_1 = State(1);
