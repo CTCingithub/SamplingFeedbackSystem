@@ -1,8 +1,11 @@
 # Time Step for Time History
-dt: 0.00001
+dt: 0.001
+
+# Ratio
+ratio: 0.01
 
 # Sampling Time
-ts: 0.008
+ts: 0.00787
 
 # Simulation Duration
 SimulationTime: 1.0
