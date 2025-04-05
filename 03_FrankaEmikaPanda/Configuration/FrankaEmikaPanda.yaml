@@ -23,8 +23,8 @@ Kp: [ 60, 60, 60, 60, 25, 15, 5 ]
 Kd: [ 5, 5, 5, 2, 2, 2, 1 ]
 
 # ODE Solver Option
-ODE_RelTol: 1.01e-12
-ODE_AbsTol: 1.01e-12
+ODE_RelTol: 1.01e-13
+ODE_AbsTol: 1.01e-13
 
 # DDE Solver Option
 DDE_RelTol: 1.01e-12
